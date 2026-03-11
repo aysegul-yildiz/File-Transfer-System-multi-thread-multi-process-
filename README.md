@@ -15,4 +15,11 @@ ftterminate.c: a utility to safely shut down the server using SIGTERM
 Makefile: Automates the compilation of all components.  
 CS 342-report.docx: Contains experimental results and performance comparisons.  
 
+### How to run?
+Build all executables using the provided Makefile by typing "make"  
+Start the server by providing the directory to serve, a unique message queue name and the buffer send size. eg: ./ftserver ./files my_queue 512  
+start the client: ./ftclient my_queue  
+Commands: once connected, the client supports list, get <filename> and quit  
+to shut down the server properly, use the termination tool with the server's PID: ./ftterminate <PID>
+
 
