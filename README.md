@@ -9,4 +9,8 @@ Multi threaded version: Uses pthread_create() to handle multiple clients within 
 ###### Named pipes (FIFOs): Dedicated pipes are created for each client session to handle data transfer (list and get operations).
 ###### Performance analysis: A detailed study of how client density, message send sizes and file sizes impact system throughput and response times.
 
-ftserver.c / ftclient.c: The multi-process implementation.tftserver.c / tftclient.c: The multi-threaded implementation.ftterminate.c: A utility to safely shut down the server using SIGTERM.Makefile: Automates the compilation of all components.CS 342-report.docx: Contains experimental results and performance comparisons.
+ftserver.c - ftclient.c: the multitprocess implementation
+.tftserver.c - tftclient.c: the multitthreaded implementation
+.ftterminate.c: a utility to safely shut down the server using SIGTERM.
+Makefile: Automates the compilation of all components.
+CS 342-report.docx: Contains experimental results and performance comparisons.
