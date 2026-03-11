@@ -10,8 +10,9 @@ Multi threaded version: Uses pthread_create() to handle multiple clients within 
 ###### Performance analysis: A detailed study of how client density, message send sizes and file sizes impact system throughput and response times.
 
 ftserver.c - ftclient.c: the multitprocess implementation  
-.tftserver.c - tftclient.c: the multitthreaded implementation  
+tftserver.c - tftclient.c: the multitthreaded implementation  
+ftterminate.c: a utility to safely shut down the server using SIGTERM  
+Makefile: Automates the compilation of all components.  
+CS 342-report.docx: Contains experimental results and performance comparisons.  
 
-.ftterminate.c: a utility to safely shut down the server using SIGTERM.
-Makefile: Automates the compilation of all components.
-CS 342-report.docx: Contains experimental results and performance comparisons.
+
